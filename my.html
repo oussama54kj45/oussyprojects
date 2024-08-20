@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .name {
+            font-size: 36px; /* حجم الخط الكبير */
+            font-weight: bold;
+            color: black; /* لون النص الأسود */
+        }
+
+        .name .blue {
+            color: #00aaff; /* اللون الأزرق */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #00aaff; /* لون الروابط أزرق */
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #0077cc; /* تغيير اللون عند المرور على الرابط */
+            transform: scale(1.1); /* تكبير الرابط عند المرور */
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            background-size: contain;
+            background-repeat: no-repeat;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .icon.insta {
+            background-image: url('instagram.png'); /* استخدم المسار الصحيح لأيقونة انستغرام */
+        }
+
+        .icon.tiktok {
+            background-image: url('tic-tac.png'); /* استخدم المسار الصحيح لأيقونة تيك توك */
+        }
+
+        .icon.facebook {
+            background-image: url('facebook (1).png'); /* استخدم المسار الصحيح لأيقونة فيسبوك */
+        }
+
+        .icon.youtube {
+            background-image: url('youtube.png'); /* استخدم المسار الصحيح لأيقونة يوتيوب */
+        }
+
+        .icon:hover {
+            transform: scale(1.2);
+            filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(180deg); /* تحويل الأيقونة إلى اللون الأزرق */
+        }
+        
+        /* تنسيق روابط التنقل في الهيدر */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-links-container {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .social-icons-container {
+            display: flex;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="name">
+                O<span class="blue">uss</span>ama
+            </div>
+            <nav class="nav-links-container">
+                <div class="nav-links">
+                    <a href="#services">Services</a>
+                    <a href="#about-us">About Us</a>
+                    <a href="#contacts">Contacts</a>
+                </div>
+            </nav>
+            <div class="social-icons-container">
+                <a href="https://www.instagram.com/spiderlolman44/" target="_blank" title="Twitter">
+                    <div class="icon insta"></div>
+                </a>
+                <a href="https://www.tiktok.com/@souma____official?lang=fr" target="_blank" title="Snapchat">
+                    <div class="icon tiktok"></div>
+                </a>
+                <a href="https://www.facebook.com/Spiderlolman44/" target="_blank" title="Gmail">
+                    <div class="icon facebook"></div>
+                </a>
+                <a href="https://www.youtube.com/@ousshammou" target="_blank" title="Discord">
+                    <div class="icon youtube"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Section with Background Image</title>
+    <!-- تضمين مكتبة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-section {
+            position: relative;
+            background-image: url('drippy-smiley-3840x2160-11481.png'); /* تغيير المسار هنا */
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            min-height: 100vh; /* ارتفاع الشاشة بالكامل */
+            display: flex;
+            align-items: center; /* محاذاة العناصر عمودياً */
+            justify-content: flex-start; /* محاذاة العناصر أفقياً إلى اليسار */
+            padding: 0 50px; /* مساحة داخلية جانبية */
+            color: white;
+        }
+
+        .text-container {
+            width: 90%; /* عرض 90% */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* محاذاة النصوص إلى أقصى اليسار داخل الحاوية */
+            margin-left: auto; /* إزاحة النصوص إلى اليمين */
+            margin-right: 0; /* إزالة المسافة من اليمين */
+        }
+
+        .text-container h1,
+        .text-container h2,
+        .text-container h3 {
+            margin: 0; /* إزالة الهوامش الافتراضية */
+            line-height: 1.2; /* ارتفاع السطر */
+        }
+
+        .text-container h1 {
+            font-size: 28px; /* حجم الخط */
+            color: white; /* لون الخط */
+            margin-bottom: 20px; /* المسافة بين h1 و h2 */
+        }
+
+        .text-container h2 {
+            font-size: 3em; /* حجم الخط كبير */
+            color: #00aaff; /* اللون الأزرق */
+            font-weight: 600; /* وزن الخط */
+            margin: 20px 0; /* المسافة العليا والسفلى بين h2 و h3 */
+        }
+
+        .text-container h3 {
+            font-size: 30px; /* حجم الخط */
+            color: white; /* لون الخط */
+            font-weight: 600; /* وزن الخط */
+            margin-bottom: 20px; /* المسافة بين h3 و h2 التالية */
+        }
+
+        .text-container .button-container {
+            margin-top: 20px; /* المسافة بين h3 والزر */
+        }
+
+        .text-container .button-container button {
+            background-color: #00aaff; /* لون خلفية الزر الأزرق */
+            color: white; /* لون النص الأبيض */
+            border: 2px solid #00aaff; /* إطار الزر الأزرق */
+            border-radius: 5px; /* زوايا دائرية */
+            padding: 10px 20px; /* مساحة داخلية */
+            font-size: 1.1em; /* حجم الخط */
+            cursor: pointer; /* تغيير شكل المؤشر عند المرور على الزر */
+            transition: all 0.3s ease; /* تأثير الانتقال */
+            outline: none; /* إزالة التأثير الافتراضي عند النقر */
+            text-decoration: none; /* إزالة التسطير من النص */
+        }
+
+        .text-container .button-container button:hover {
+            transform: scale(1.1); /* تكبير الزر عند تمرير الماوس */
+            background-color: white; /* تغيير لون الخلفية إلى الأبيض عند التمرير */
+            color: #00aaff; /* تغيير لون النص إلى الأزرق عند التمرير */
+        }
+
+        .social-icons {
+            margin-top: 20px; /* المسافة بين الزر والأيقونات الاجتماعية */
+            display: flex;
+            gap: 15px; /* المسافة بين الأيقونات */
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; /* عرض الأيقونة */
+            height: 40px; /* ارتفاع الأيقونة */
+            border: 2px solid #00aaff; /* إطار الأيقونة الأزرق */
+            border-radius: 50%; /* جعل الأيقونة دائرية */
+            color: #00aaff; /* لون الأيقونة */
+            font-size: 1.5em; /* حجم الأيقونة */
+            transition: all 0.3s ease; /* تأثير الانتقال */
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1); /* تكبير الأيقونة عند تمرير الماوس */
+            color: white; /* تغيير لون الأيقونة إلى الأبيض عند التمرير */
+            background-color: #00aaff; /* تغيير لون الخلفية إلى الأزرق عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-section">
+        <div class="text-container">
+            <h1>Hello :) I am</h1>
+            <h2>OUSSAMA</h2>
+            <h3>A Beginning Programmer</h3>
+            <div class="button-container">
+                <a href="https://www.rockstargames.com/reddeadredemption2" target="_blank">
+                    <button>View My Projects</button>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://twitter.com/yourusername" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://snapchat.com/add/yourusername" target="_blank" title="Snapchat">
+                    <i class="fab fa-snapchat-ghost"></i>
+                </a>
+                <a href="mailto:hammououss@gmail.com" target="_blank" title="Gmail">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://discord.com/channels/@me" target="_blank" title="Discord">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- تضمين مكتبة Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
